@@ -1,0 +1,137 @@
+.oculto {
+    display: none;
+}
+main{
+    background-image: url(../img/hotel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+nav {    
+    overflow: hidden;
+    font-family:Creepster;   
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+    list-style-type: none;
+}
+
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+
+body{
+    background-color: rgb(42, 1, 9);
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+h1{
+    font-family: Creepster;
+    font-size: 50px;
+    text-align: left;
+    background-image: url(../img/nav-dracula.jpg);
+}
+h2
+{
+    font-family: Creepster;
+    font-size: 50px;
+    text-align: center;
+    color:blanchedalmond
+}
+table{
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-family: Creepster;
+    font-size: 18px;
+}
+
+th{
+    text-transform: capitalize;
+    font-family: Creepster;
+    font-size: 50px;
+    background-color: rgb(69, 2, 2);
+}
+
+td{
+    text-align: right;
+}
+
+.rowPar{
+    background-color: #ddd;
+}
+.rowImpar{
+    background-color: blanchedalmond;
+}
+
+
+.seccion-formulario, .seccion-tabla{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+fieldset{
+    background-color: #7e8e91;
+    font-family: Creepster;
+    font-size: 18px;    
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+input, select{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.carta {
+    display: inline-block;
+    vertical-align: top; 
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px;
+    background-color: #7e8e91;
+    color: blanchedalmond;
+    width: 10rem;
+    height: 14rem;
+    box-sizing: border-box;
+    font-family: Creepster;
+}
+
+
+

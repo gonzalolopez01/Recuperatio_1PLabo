@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos.css" />  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=New+Rocker&display=swap" rel="stylesheet">
+
+    <script src="./js/scripts.js" type="module" defer></script>
+    <title>Dracula's</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="/index.html">Monstruos</a></li>
+            <li><a href="/html/cartas.html">Cartas</a></li>
+      </nav>
+      <h1>Crud Monstruos</h1>
+    </header>
+    <main>
+      <section class="seccion-formulario">
+        <h2>Alta Monstruo</h2>
+        <form>
+            <fieldset>
+                <label for="lblNombre">Nombre:</label>
+                <p>
+                    <input
+                    type="text"
+                    name="txtNombre"
+                    placeholder="Ingrese Nombre"
+                    autocomplete="off"
+                    />
+                </p>
+                <label for="lblAlias">Alias:</label>
+                <p>
+                    <input
+                    type="text"
+                    name="txtAlterEgo"
+                    placeholder="Ingrese Alias"
+                    autocomplete="off"
+                    />
+                </p>
+                </p>
+                    <fieldset>
+                        <legend>Defensa</legend>
+                        <input type="radio" name="rdoDefensa" value="Poción" checked />Poción
+                        <br />
+                        <input type="radio" name="rdoDefensa" value="Crucifijo" />Crucifijo
+                        <br />
+                        <input type="radio" name="rdoDefensa" value="Estaca" />Estaca
+                        <br />
+                        <input type="radio" name="rdoDefensa" value="Plata" />Plata
+                        <br />
+                    </fieldset>
+                <p>
+                    <label for="lblMiedo">Miedo:</label>
+                    <input type="range" name="rngBarra" min="0" max="100" value="50">
+                </p>
+                <p>
+                    <label for="lblTipo">Tipo:</label>
+                    <select name="slctTipo" id="selectTipo">      
+                    </select>        
+                </p>
+                <p>         
+                    <input type="submit" value="Alta Monstruo" id="btnSubmit"/>
+                    <!-- deberia estar oculto a no ser que cargue una persona -->
+                    <input type="button" value="Modificar Monstruo" id="btnModificar" class="oculto"/>
+                    <input type="button" value="Eliminar Monstruo" id="botonEliminar" class="oculto"/>
+                    <input type="button" value="Cancelar" id="btnCancelar" class="oculto"/>
+                    <input type="hidden" value="Modificar Monstruo"  />
+                    <input type="hidden" name="txtId" />
+                </p>
+            </fieldset>
+        </form>
+      </section>
+      <section class="seccion-tabla">
+        <h2>Lista de Monstruos</h2>
+        <div id="tabla"></div>
+      </section>
+    </main>
+    <footer>
+        <nav>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="/index.html">Monstruos</a></li>
+            <li><a href="/html/cartas.html">Cartas</a></li>
+        </nav>
+    </footer>
+  </body>
+</html>
